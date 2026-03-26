@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>פותח את האפליקציה...</p>
+  <script>
+    const id = new URLSearchParams(window.location.search).get('id');
+    if (id) window.location = 'statusapp:///add-friend/' + id;
+  </script>
+</body>
+</html>
