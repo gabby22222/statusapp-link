@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StatusApp - הוספת חבר</title>
+</head>
 <body>
-  <p>פותח את האפליקציה...</p>
+  <p style="text-align:center;font-family:sans-serif;margin-top:40px">פותח את StatusApp...</p>
   <script>
     const id = new URLSearchParams(window.location.search).get('id');
- if (id) window.location = 'statusapp://localhost/add-friend/' + id;
+    if (id) {
+      window.location.href = 'statusapp://add-friend/' + id;
+    }
   </script>
 </body>
 </html>
